@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="sonar-task" default="generate-sonar-reports" basedir=".">
+    <property name="target" location="${basedir}/dist" />
+    <property name="lib" location="${basedir}/lib" />
+    <property name="src" location="${basedir}/src/main/java" />
+
+<target name="generate-sonar-reports" description="Declare Sonar task">
+
+    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml"> 
+    <classpath path="lib/sonar-ant-task-2.0.jar" />
+    </taskdef>
+    </target>
+    <target name="sonar" depends="generate-sonar-reports" description="Run the Sonar code analysis tool">
+        <property name="sonar.jdbc.url" value="jdbc:h2:tcp://localhost:9092/sonar" />
+        <property name="sonar.jdbc.username" value="sonar" />
+        <property name="sonar.jdbc.password" value="sonar" />
+        <property name="sonar.sources" value="${src}" />
+        <property name="sonar.projectName" value="ironmountain.apiservices" />
+        <property name="sonar.binaries" value="${basedir}/target/classes" />
+        <property name="sonar.libraries" value="${basedir}/lib/sonar-ant-task-2.0.jar" />
+        <sonar:sonar key="ironmountain.apiservices:Iron_Mountain" version="0.1-SNAPSHOT"  xmlns:sonar="antlib:org.sonar.ant"/>
+    </target>
+    
+</project>

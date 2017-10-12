@@ -1,0 +1,297 @@
+{
+	"searchResponse": 
+	{
+		"results": 
+		[
+			{
+				"objectId": "workspace://SpacesStore/bb13f2ae-5765-4db2-b14b-ffb55e371199",
+				"objectType": "ironMountain_typeOne",
+				"mimeType": null,
+				"properties": 
+				{
+					"ironMountain_attrOne": "1",
+					"sys_store-protocol": "workspace",
+					"modifier": "admin@alfdev2.com",
+					"ironMountain_attrSix": 
+					[
+						"1"
+					],
+
+					"Document": 
+					{
+						"contentUrl": "store://2016/12/22/4/27/5d174c32-8357-4250-a2b8-1c83c44f18af.bin",
+						"mimetype": "application/pdf",
+						"size": 160525,
+						"encoding": "UTF-8",
+						"locale": "en_US",
+						"id": 129551,
+						"infoUrl": "contentUrl=store://2016/12/22/4/27/5d174c32-8357-4250-a2b8-1c83c44f18af.bin|mimetype=application/pdf|size=160525|encoding=UTF-8|locale=en_US_"
+					},
+
+					"sys_locale": "en_US",
+					"cm_autoVersion": false,
+					"sys_store-identifier": "SpacesStore",
+					"cm_autoVersionOnUpdateProps": false,
+					"objectTypeReadOnly": "ironMountain:typeOne",
+					"cm_initialVersion": true,
+					"objectId": "workspace://SpacesStore/bb13f2ae-5765-4db2-b14b-ffb55e371199",
+					"ironMountain_attrThree": "1",
+					"sys_node-dbid": 199717,
+					"ironMountain_attrEleven": 1482345000000,
+					"creator": "admin@alfdev2.com",
+					"creationDate": 1482398873675,
+					"versionLabel": "1.0",
+					"ironMountain_attrFour": "abc",
+					"ironMountain_attrNine": 
+					[
+						"1"
+					],
+
+					"modifiedDate": 1482398874861,
+					"objectName": "Self Enrollment for HP MFPs.pdf",
+					"ironMountain_attrFive": "1",
+					"ironMountain_attrEight": 
+					[
+						"abc"
+					],
+
+					"ironMountain_attrTwo": "CONFIDENTIAL",
+					"ironMountain_attrSeven": 
+					[
+						"abc"
+					]
+				},
+
+				"appliedAspects": null
+			}
+		],
+
+		"state": 
+		{
+			"per_page": 10,
+			"sort_by": "objectName",
+			"order": "asc"
+		},
+
+		"searchParameters": 
+		[
+			{
+				"paramName": "ironMountain_attrNine",
+				"paramValue": "1",
+				"paramType": "property",
+				"operator": "OPERATOR_EQUALS",
+				"logic": "AND"
+			},
+
+			{
+				"paramName": null,
+				"paramValue": "ironMountain_typeOne",
+				"paramType": "type",
+				"operator": null,
+				"logic": null
+			}
+		],
+
+		"facetFields": 
+		{
+			
+		},
+
+		"logic": "+and+"
+	},
+
+	"compositeSearchResponse": 
+	{
+		"results": 
+		[
+			{
+				"objectId": "workspace://SpacesStore/27147b8c-6e3c-42ec-adbc-fdae993c53e8",
+				"objectType": "typeOCname1394",
+				"mimeType": null,
+				"properties": 
+				{
+					"ironMountain_attrEightyEight": 1482345000000,
+					"ocName-c1690": "1",
+					"ocName-c1393": "1",
+					"ocName-c1670": 1482345000000,
+					"sys_store-protocol": "workspace",
+					"modifier": "admin@alfdev2.com",
+					"ocName-c1697": null,
+					"ocName-c1732": "abc",
+					"cm_lastThumbnailModification": 
+					[
+						"doclib:1482403835431"
+					],
+
+					"ocName-c1711": "xyz",
+					"Document": 
+					{
+						"contentUrl": "store://2016/12/22/5/50/8b321bce-dea1-474d-877e-410bc0314038.bin",
+						"mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+						"size": 51760,
+						"encoding": "UTF-8",
+						"locale": "en_US",
+						"id": 129587,
+						"infoUrl": "contentUrl=store://2016/12/22/5/50/8b321bce-dea1-474d-877e-410bc0314038.bin|mimetype=application/vnd.openxmlformats-officedocument.wordprocessingml.document|size=51760|encoding=UTF-8|locale=en_US_"
+					},
+
+					"sys_locale": "en_US",
+					"cm_autoVersion": false,
+					"sys_store-identifier": "SpacesStore",
+					"cm_autoVersionOnUpdateProps": false,
+					"objectTypeReadOnly": "ironMountain:typeTen",
+					"cm_initialVersion": true,
+					"ironMountain_attrFiftyNine": "xyz",
+					"objectId": "workspace://SpacesStore/27147b8c-6e3c-42ec-adbc-fdae993c53e8",
+					"sys_node-dbid": 199767,
+					"ironMountain_attrFiftyFive": "1",
+					"ironMountain_attrFiftySix": "abc",
+					"creator": "admin@alfdev2.com",
+					"ocName-c1681": "COVER PAGE",
+					"ironMountain_attrFiftyEight": "COVER PAGE",
+					"ironMountain_attrFiftySeven": "1",
+					"ironMountain_attrFiftyThree": "1",
+					"creationDate": 1482403822603,
+					"tsg_rendition": 
+					{
+						"contentUrl": "store://2016/12/22/5/50/24356917-9039-46ea-a41c-484440d55c7d.bin",
+						"mimetype": "application/pdf",
+						"size": 201957,
+						"encoding": "UTF-8",
+						"locale": "en_US",
+						"id": 129589,
+						"infoUrl": "contentUrl=store://2016/12/22/5/50/24356917-9039-46ea-a41c-484440d55c7d.bin|mimetype=application/pdf|size=201957|encoding=UTF-8|locale=en_US_"
+					},
+
+					"ironMountain_attrFiftyOne": "1",
+					"ocName-c1725": "1",
+					"ocName-c1739": "1",
+					"ocName-c1718": "1",
+					"versionLabel": "1.0",
+					"ironMountain_attrFifty": "1",
+					"modifiedDate": 1482403825832,
+					"objectName": "Alfresco Solr Master Slave setup document.docx"
+				},
+
+				"appliedAspects": null
+			},
+
+			{
+				"objectId": "workspace://SpacesStore/bb13f2ae-5765-4db2-b14b-ffb55e371199",
+				"objectType": "typeOCname1394",
+				"mimeType": null,
+				"properties": 
+				{
+					"ocName-c1393": "1",
+					"ocName-c1690": "1",
+					"ocName-c1670": 1482345000000,
+					"ironMountain_attrOne": "1",
+					"sys_store-protocol": "workspace",
+					"modifier": "admin@alfdev2.com",
+					"ironMountain_attrSix": 
+					[
+						"1"
+					],
+
+					"ocName-c1697": "Self Enrollment for HP MFPs.pdf",
+					"ocName-c1732": 
+					[
+						"abc"
+					],
+
+					"ocName-c1711": "abc",
+					"Document": 
+					{
+						"contentUrl": "store://2016/12/22/4/27/5d174c32-8357-4250-a2b8-1c83c44f18af.bin",
+						"mimetype": "application/pdf",
+						"size": 160525,
+						"encoding": "UTF-8",
+						"locale": "en_US",
+						"id": 129551,
+						"infoUrl": "contentUrl=store://2016/12/22/4/27/5d174c32-8357-4250-a2b8-1c83c44f18af.bin|mimetype=application/pdf|size=160525|encoding=UTF-8|locale=en_US_"
+					},
+
+					"sys_locale": "en_US",
+					"cm_autoVersion": false,
+					"sys_store-identifier": "SpacesStore",
+					"cm_autoVersionOnUpdateProps": false,
+					"objectTypeReadOnly": "ironMountain:typeOne",
+					"cm_initialVersion": true,
+					"objectId": "workspace://SpacesStore/bb13f2ae-5765-4db2-b14b-ffb55e371199",
+					"ironMountain_attrThree": "1",
+					"sys_node-dbid": 199717,
+					"ironMountain_attrEleven": 1482345000000,
+					"creator": "admin@alfdev2.com",
+					"ocName-c1681": "CONFIDENTIAL",
+					"creationDate": 1482398873675,
+					"ocName-c1725": 
+					[
+						"1"
+					],
+
+					"ocName-c1739": 
+					[
+						"1"
+					],
+
+					"ocName-c1718": "1",
+					"versionLabel": "1.0",
+					"ironMountain_attrFour": "abc",
+					"ironMountain_attrNine": 
+					[
+						"1"
+					],
+
+					"modifiedDate": 1482398874861,
+					"objectName": "Self Enrollment for HP MFPs.pdf",
+					"ironMountain_attrFive": "1",
+					"ironMountain_attrEight": 
+					[
+						"abc"
+					],
+
+					"ironMountain_attrTwo": "CONFIDENTIAL",
+					"ironMountain_attrSeven": 
+					[
+						"abc"
+					]
+				},
+
+				"appliedAspects": null
+			}
+		],
+
+		"state": 
+		{
+			"per_page": 10,
+			"sort_by": "objectName",
+			"order": "asc"
+		},
+
+		"searchParameters": 
+		[
+			{
+				"paramName": "ironMountain_attrNine",
+				"paramValue": "1",
+				"paramType": "property",
+				"operator": "OPERATOR_EQUALS",
+				"logic": "LOGIC_LIKE"
+			},
+
+			{
+				"paramName": null,
+				"paramValue": "ironMountain_typeOne",
+				"paramType": "type",
+				"operator": "LOGIC_LIKE",
+				"logic": "AND"
+			}
+		],
+
+		"facetFields": 
+		{
+			
+		},
+
+		"logic": "+and+"
+	}
+}

@@ -1,0 +1,218 @@
+{
+	"searchResponse": 
+	{
+		"success": true,
+		"errors": 
+		[
+			
+		],
+
+		"appGroup": "AccountPay",
+		"resultsCount": 1,
+		"documents": 
+		{
+			"documentList": 
+			[
+				{
+					"docName": "Self Enrollment for HP MFPs.pdf",
+					"docId": "bb13f2ae-5765-4db2-b14b-ffb55e371199",
+					"downloadURL": "http://localhost:9090/apiservices/api/documentretrieve?secretCode=39617ec4-44f9-4e9f-862b-bbfcaeed149f",
+					"displayFields": 
+					{
+						"displayFieldList": 
+						[
+							{
+								"fieldLabel": "CheckNum",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "TINNum",
+								"value": "[1]"
+							},
+
+							{
+								"fieldLabel": "InvoiceNum",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "APDate",
+								"value": "Thu Dec 22 00:00:00 IST 2016"
+							},
+
+							{
+								"fieldLabel": "Organization",
+								"value": "abc"
+							},
+
+							{
+								"fieldLabel": "VendorNum",
+								"value": "[1]"
+							},
+
+							{
+								"fieldLabel": "PONum",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "VendorName2",
+								"value": "[abc]"
+							},
+
+							{
+								"fieldLabel": "DocumentType",
+								"value": "CONFIDENTIAL"
+							},
+
+							{
+								"fieldLabel": "VendorName",
+								"value": "[abc]"
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+
+	"compositeSearchResponse": 
+	{
+		"success": true,
+		"errors": 
+		[
+			
+		],
+
+		"appGroup": "Accounts Payable2",
+		"resultsCount": 2,
+		"documents": 
+		{
+			"documentList": 
+			[
+				{
+					"docName": "Alfresco Solr Master Slave setup document.docx",
+					"docId": "27147b8c-6e3c-42ec-adbc-fdae993c53e8",
+					"downloadURL": "http://localhost:9090/apiservices/api/documentretrieve?secretCode=238462fc-6a62-434d-807a-383e7b6c1cf7",
+					"displayFields": 
+					{
+						"displayFieldList": 
+						[
+							{
+								"fieldLabel": "Vendor Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "Invoice Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "Check Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "PO Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "Document Type",
+								"value": "COVER PAGE"
+							},
+
+							{
+								"fieldLabel": "Date",
+								"value": "Thu Dec 22 00:00:00 IST 2016"
+							},
+
+							{
+								"fieldLabel": "Name",
+								"value": "null"
+							},
+
+							{
+								"fieldLabel": "Vendor Name",
+								"value": "abc"
+							},
+
+							{
+								"fieldLabel": "Organization",
+								"value": "xyz"
+							},
+
+							{
+								"fieldLabel": "TIN Number",
+								"value": "1"
+							}
+						]
+					}
+				},
+
+				{
+					"docName": "Self Enrollment for HP MFPs.pdf",
+					"docId": "bb13f2ae-5765-4db2-b14b-ffb55e371199",
+					"downloadURL": "http://localhost:9090/apiservices/api/documentretrieve?secretCode=b20f0a42-4b52-49c1-b091-4cb2c88b69c5",
+					"displayFields": 
+					{
+						"displayFieldList": 
+						[
+							{
+								"fieldLabel": "Vendor Number",
+								"value": "[1]"
+							},
+
+							{
+								"fieldLabel": "Invoice Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "Check Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "PO Number",
+								"value": "1"
+							},
+
+							{
+								"fieldLabel": "Document Type",
+								"value": "CONFIDENTIAL"
+							},
+
+							{
+								"fieldLabel": "Date",
+								"value": "Thu Dec 22 00:00:00 IST 2016"
+							},
+
+							{
+								"fieldLabel": "Name",
+								"value": "Self Enrollment for HP MFPs.pdf"
+							},
+
+							{
+								"fieldLabel": "Vendor Name",
+								"value": "[abc]"
+							},
+
+							{
+								"fieldLabel": "Organization",
+								"value": "abc"
+							},
+
+							{
+								"fieldLabel": "TIN Number",
+								"value": "[1]"
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

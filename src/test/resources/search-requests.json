@@ -1,0 +1,78 @@
+{
+	"searchRequest": 
+	{
+		"appGroup": "AccountPay",
+		"searchFields": 
+		{
+			"searchFieldList": 
+			[
+				{
+					"fieldLabel": "VendorNum",
+					"value1": "1",
+					"operator": "EQUAL"
+				}
+			]
+		}
+	},
+	"searchRequestWithIMFields": 
+	{
+		"appGroup": "AccountPay",
+		"searchFields": 
+		{
+			"searchFieldList": 
+			[
+				{
+					"fieldLabel": "IM_Reports",
+					"value1": "1",
+					"operator": "EQUAL"
+				}
+			]
+		}
+	},
+	"searchRequestWithInvalidField": 
+	{
+		"appGroup": "AccountPay",
+		"searchFields": 
+		{
+			"searchFieldList": 
+			[
+				{
+					"fieldLabel": "invalidField",
+					"value1": "1",
+					"operator": "EQUAL"
+				}
+			]
+		}
+	},
+	"searchRequestWithAlfrescoInternalField": 
+	{
+		"appGroup": "AccountPay",
+		"searchFields": 
+		{
+			"searchFieldList": 
+			[
+				{
+					"fieldLabel": "Creator",
+					"value1": "1",
+					"operator": "EQUAL"
+				}
+			]
+		}
+	},
+
+	"compositeSearchRequest": 
+	{
+		"appGroup": "Accounts Payable",
+		"searchFields": 
+		{
+			"searchFieldList": 
+			[
+				{
+					"fieldLabel": "Vendor Number",
+					"value1": "1",
+					"operator": "EQUAL"
+				}
+			]
+		}
+	}
+}

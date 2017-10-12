@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DRC Support login</title>
+	<script src="jquery-3.1.1.js"></script>
+   
+    <link rel="stylesheet" href="./web/css/styles.css" />
+
+
+</head>
+
+<body onload="removeCookies();">
+	<div
+		style="background-color: #034880; margin-left: -1px; margin-top: -252px; width: 1350px; height: 268px; overflow: hidden; margin-right: -5px; background-size: contain; background-repeat: no-repeat; max-height: 90%; max-width: 100%; display: block;"
+		class="theme-company-logo"></div>
+	<img src="./web/images/logo.jpg" alt=""
+		style="margin-left: -1px; margin-top: -79px; width: 1350px; max-width: 100%; height: 268px; max-height: 100%" />
+		
+
+
+<div id="div3" style="margin-left:400px;position:relative;top: 310px;
+	left: 80px;align:centre;width:580px;display:none;height:60px;padding-top: 50px;background-color:#a19f9f;text-align:center;text-color:white;color:white;">
+<label id="label-id"> Server has encountered some problem, Please check with system administrator</label>
+</div>
+
+
+	<form id="login-form" name="loginform" accept-charset="UTF-8"
+		method="post" action="api/supportlogin" style="margin-left: 20px;opacity: 1;" autocomplete="off">
+
+	
+   <div id="div5" style="margin-left:50px;position:absolute;display:none;top:310px;
+	left:180px;align:centre;width:580px;box-shadow:0 0 15px;height:50px;padding-top: 50px;background-color:#a19f9f;text-align:center;text-color:white;color:white;">
+</div>
+		
+		<div id="errormsg" style="margin-top: 20px; margin-left: 16px; "><strong id="errormsgspan" style="color:red"></strong></div>
+		<div class="form-field">
+			<label for="default-log-in" class= "loginLabel"	>
+				Log In 
+			</label> 
+
+			<label id="default-need-help-id" for="default-need-help" class="needHelpLabel">
+				Need Help
+			</label>
+			<br> <br> <br> 
+
+
+
+
+			<label for="default-username" class="userNameLabel" >
+				Username
+			</label>
+			
+			<label id="default-need-help-id-1" for="default-more-info" class="needHelpLabel1">
+				If you need information about your Username or 
+			</label>
+			<label id="default-need-help-id-2"
+				for="default-more-info-1" class="needHelpLabel2">
+				password, contact your system administrator.
+			</label>
+			<br> 
+
+			<input type="text" id="default-username" 
+				name="username" maxlength="255"
+				class="userNameInput" onblur="this.setAttribute('readonly', 'readonly');" onfocus="this.removeAttribute('readonly');"
+				value="">
+
+		</div>
+		<div class="form-field" style="margin-top: 12px;">
+			<label for="default-password" class="passwordLabel" >
+					Password
+			</label>
+			<br> 
+			<input type="password" id="default-password" autocomplete="off"
+				name="password" maxlength="255" onblur="this.setAttribute('readonly', 'readonly');" onfocus="this.removeAttribute('readonly');"
+				class="passwordInput">
+		</div>
+		<div class="form-field" style="margin-top: 24px;">
+			<label for="default-tenant"
+			class="tenantNameLabel">
+				Tenant Domain
+			</label>
+			<br> 
+			<select id="default-tenant"
+				name="tenant"
+				style="border-radius: 5px; border-color: #3fbbe1; position: relative; left: 14px; width: 365px; height: 30px; top: 23px;">
+				<option value="">Select</option>
+				</select>
+		</div>
+		<div class="form-field" style="margin-top: 40px; margin-left: 150px;">
+			<button type="button" tabindex="0" id="default-submit-button" class="logButton">
+				Log In
+			</button>
+		</div>
+		
+		<!-- <div class="form-field" style="margin-top:-295px;margin-left: 600px;font-family: arial;font-weight: bold;">
+			
+			<a id="changePasswordLink"  name="changePasswordLink" href="./changePassword" title="To Reset password of a user">Change Password</a>
+		</div>-->
+
+		<div id="tenantMessageid" class="tenantmessage"></div>
+		<!-- IRM Custom Code Ends -->
+	</form>
+	
+	<!--change-password Form -->
+<div id="change-passworddiv">
+<div id="div4" style="margin-left: 200px;
+position: absolute;left: 180px;width: 480px;height: 60px;padding-top: 50px;background-color:black;text-align: center;
+color: white;top: 290px;display:none">
+
+</div>
+
+<form class="form" name="change-passwordform" action="#" accept-charset="UTF-8" id="change-password-form" style="border-radius: 10px;"  autocomplete="off" onkeypress="return enterKeyScript(event)" >
+<div id="buttons" style="font-family:Courier New, Courier, monospace; font-style:regular; font-size: 185%;
+    font-weight:normal;background-color:#eee;text-align: center;border-top-right-radius: 10px; 
+border-top-left-radius: 10px;" >
+<div style="height: 20px;">Change Password</div>
+<hr style="color:#eee;margin-bottom: inherit;border-width: 2px;"/>
+ <div id="update-id"  style="font-size: 13px;font-family:Open Sans, arial, helvetica, clean, sans-serif;text-align: center;margin-bottom:10px;">Update Your Password Detail To Login into repository</div>
+</div>
+
+
+
+
+<label style="margin-left:139px; font-size: 13px;font-family:Open Sans, arial, helvetica, clean, sans-serif;">  Enter Old Password:</label>
+
+
+<input type="password" id="oldpw" name="oldpw" value="" autocomplete="off"  onblur="this.setAttribute('readonly', 'readonly');" onfocus="this.removeAttribute('readonly');" /><br/>
+
+<label style="margin-left:133px; font-size: 13px;font-family:Open Sans, arial, helvetica, clean, sans-serif;">  Enter New Password:</label>
+
+  
+<input type="password" id="newpw" name="newpw"  value=""  autocomplete="off"  onblur="this.setAttribute('readonly', 'readonly');" onfocus="this.removeAttribute('readonly');" /><br/>
+
+<label style="margin-left:119px; font-size: 13px;font-family:Open Sans, arial, helvetica, clean, sans-serif;">Confirm New Password:</label>
+
+<input type="password" id="confirmnewpw" name="confirmnewpw"  value="" autocomplete="off" onblur="this.setAttribute('readonly', 'readonly');" onfocus="this.removeAttribute('readonly');"     />
+
+<div id="buttons" style="background-color:#eee;align:centre;border-top:1px solid #999;margin-top: 14px;height:40px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;" >
+
+<input type="button" id="change-password-form-submit" style="width:40px;margin-left:300px;" value="OK"/>
+
+<input type="button" id="change-password-form-cancel" style="width:75px;" value="Cancel"    />
+
+</div>
+
+
+</form>
+</div>
+	
+	<script>
+	
+	var changePasswordUrl = "change_password_url";
+	var alfTicket = "";
+ 	var shareLoginPageUrl = "" ;	
+ 	var shareSuccessPath = "";
+ 	var modifiedUsername = ""; 
+ 	var essinstance ="";
+ 	var tenant = "";
+ 	
+		$.getJSON("api/tenantdomains", function(result) {
+			var options = $("#default-tenant");
+			$.each(result, function() {
+			    options.append($("<option />").val(this).text(this));
+			});
+		});
+		
+		function delete_cookie( name ) {
+  		document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		}
+		
+		function removeCookies(){
+			
+			delete_cookie('ticket');	
+			delete_cookie('hpiadminuser');	
+			delete_cookie('Alfresco-CSRFToken');	
+			delete_cookie('alfUsername3');	
+			delete_cookie('alfLogin');	
+		
+			      
+		}
+	 	
+		function hideFormFields() {
+			$("#default-need-help-id").hide();
+			$("#default-need-help-id-1").hide();
+			$("#default-need-help-id-2").hide();
+			$("#changePasswordLink").hide();
+			$("#default-username").css("width" , "197px"  ); 
+		}
+	
+		function disableFormFields() {
+      	   $("#default-submit-button").unbind();
+    	   $('#default-submit-button').attr('readonly', 'true'); // mark it as read only
+    	   $('#default-username').attr('readonly', 'true'); // mark it as read only
+    	   $('#default-password').attr('readonly', 'true'); // mark it as read only
+    	   $('#default-tenant').attr('disabled', 'disabled');
+    	}
+		function enableFormFields() {
+	       $("#default-submit-button").bind();
+	 	   $('#default-submit-button').removeAttr('disabled');
+	       $('#default-username').removeAttr('disabled');
+	       $('#default-password').removeAttr('disabled');
+	       $('#default-tenant').removeAttr('disabled');
+	    }
+		function showFormFields() {
+			$("#default-need-help-id").show();
+			$("#default-need-help-id-1").show();
+			$("#default-need-help-id-2").show();
+			$("#default-username").css("width" , "365px"  ); 
+			$("#default-username").show();
+			$("#changePasswordLink").show();
+		}
+		function maskAndShowMessage( msg){
+		    $("#change-passworddiv").css("display", "block");
+	        $("#change-password-form").css("display", "none");
+	        $("#div4").css("background-color" , "#a19f9f");
+	        $("#div4").text(msg).show();
+		}
+		function resetMask(){
+			 $("#div4").css("background-color" , "black");
+	         $("#div4").text("").show();
+	         $("#div4").css("display", "none");
+		}
+
+		$("button").hover(function(){
+			$(this).css("border-top-color", '#1c6d92');
+			$(this).css("border-bottom-color", '#053B68');
+		 		    
+		    }, function(){
+		    $(this).css("border-top-color",  '#2388b6');
+		    $(this).css("border-bottom-color", '#034880');
+		});
+		
+		$( "#default-submit-button" ).click(function() {
+			$("#login-form").unbind('submit').submit(function(e)
+			{
+			    removeCookies();
+				var loginForm = $('#login-form').serializeArray();
+				var loginFormObject = {};
+				$.each(loginForm,
+				    function(i, v) {
+				        loginFormObject[v.name] = v.value;
+				    });
+			    var formURL = $(this).attr("action");
+			    var loginData = JSON.stringify(loginFormObject);
+				$( "#default-submit-button" ).prop('disabled', true).addClass('disabled');
+			    $.ajax(
+			    {
+			        url : formURL,
+			        type: "POST",
+			        contentType : 'application/json',
+			        dataType : 'json',
+			        data : JSON.stringify(loginFormObject),
+			        success:function(data, textStatus, jqXHR) 
+			        {
+			        $( "#default-submit-button" ).removeAttr('disabled').removeClass('disabled');
+			        	var obj = jQuery.parseJSON(JSON.stringify(data));
+						var errorCode =  obj.errorCode ;
+			        	
+					
+					     tenant =$("#default-tenant :selected").text();
+			  		     modifiedUsername = document.getElementById("default-username").value +"@" +   tenant ;
+					     essinstance = obj.essInstance ;
+			        		
+			        	if (errorCode == "0"){
+			        		maskAndShowMessage( "Please wait , processing request....");
+			        		alfTicket = obj.alfTicket ;
+			        		document.cookie = "ticket="+ obj.alfTicket + ";path=/"; 
+			        		document.cookie = "hpiadminuser="+ obj.username + ";path=/";
+							shareLoginPageUrl =  obj.shareInstanceURL + "//page/dologin";
+			                shareSuccessPath = "/" + obj.shareContextPath + "/page";
+						    changePasswordUrl = obj.shareInstanceURL + "" ;
+			        		$('<form >', {
+			        		    "id": "sharelogin",
+			        		    "html": '<input type="hidden" id="username" name="username" value="' + obj.username + '" />'
+			        		    		+ '<input type="hidden" id="modifyusername" name="modifyusername" value="' + obj.username + '" />'
+			        		    		+ '<input type="hidden" id="password" name="password" value="' + obj.password + '" />'
+			        		       		+ '<input type="hidden" id="success" name="success" value="' + shareSuccessPath + '" />',
+			        		 
+			        		      "action": shareLoginPageUrl,
+			        		    "method": "POST"
+			        		}).appendTo(document.body).submit();
+
+			        	}else{
+			        	
+			        		var errorCode =  obj.errorCode ;
+			        		essinstance = obj.essInstance ;
+			        		if(errorCode == "2" ){
+			        		
+			        			document.getElementById('change-password-form').reset();
+			        			$('#change-password-form')[0].reset();
+			        		
+			        		    changePasswordUrl = obj.shareInstanceURL + "" ;	
+			        		    $("#change-password-form").css("display", "block");
+			        			$("#change-passworddiv").css("display", "block");
+			        			hideFormFields();
+			        			var e1 = document.getElementById("default-username");
+			        		    e1.style.width = 100;
+			        		    removeCookies();
+			        		
+			        		}else{
+			        		removeCookies();
+			        		var errorMsg = obj.errorMsg;
+			        		if (errorMsg == null) {
+				        		var errorMsg = "<p1>" + obj.errors[0].message + ":</p1>";
+				 
+								var fieldErrors = obj.fieldErrors;
+				        		$.each(fieldErrors, function(i, item) {
+				        			errorMsg = errorMsg + "<br>&nbsp;&nbsp;&nbsp;&nbsp;---->&nbsp;&nbsp;&nbsp;&nbsp;" + item.message;
+				        		});
+				        		  
+			        		}
+				        	$('#errormsgspan').html(errorMsg);
+			        		}
+			        	}
+			        },
+			        error: function(jqXHR, textStatus, errorThrown) 
+			        {
+			        	$( "#default-submit-button" ).removeAttr('disabled').removeClass('disabled');
+			     	    removeCookies();
+			        	$('#errormsgspan').text(errorThrown);
+			        }
+			    });
+			    e.preventDefault();
+			});
+			
+			// change password form popup send-button click event.
+			$("#change-password-form-submit").click(function() {
+			 submit_Form_popup();
+			
+			});	
+			
+			$("#change-password-form-cancel").click(function() {
+				$("#change-passworddiv").css("display", "none");
+				showFormFields();
+    	 		removeCookies();
+				});
+			$("#login-form").submit();
+    		$('#errormsgspan').html("");	
+		
+		});
+		
+		function enterKeyScript(e){
+		 if (e.keyCode == 13) {submit_Form_popup();}
+		}
+		
+		function submit_Form_popup(){
+		
+		// change password form popup send-button click event.
+				var confirmnewpw = $("#confirmnewpw").val();
+				var oldpw = $("#oldpw").val();
+				var newpw = $("#newpw").val();
+			
+				if(oldpw.length ==0 ){
+				
+					$("#div4").text('Old Password can not be empty').show();
+			 		$("#div4").fadeOut(3000);
+				}else if( confirmnewpw !=newpw ){
+				
+					$("#div4").text('New Password and Confirm Password does not match').show();
+					$("#div4").fadeOut(3000);
+				}else if(newpw.length ==0 )
+				{
+					$("#div4").text('New Password can not be empty').show();
+					$("#div4").fadeOut(3000);
+				}else{
+				var tempusername = document.getElementById("default-username").value ;
+				var changePasswordObject = {
+						"username": tempusername,
+						"oldpassword": oldpw,
+						"newpassword": confirmnewpw,
+						"customer": tenant,
+						"essInstance": essinstance,
+						"loginFlag": "true"				
+					};
+									
+			   changePasswordUrl = "api/changeEssPassword" ;
+			   showFormFields();
+			
+					  $("#change-passworddiv").css("display", "none"); 
+				      $.ajax({
+						        url : changePasswordUrl,
+						        type: "POST",
+						        contentType : 'application/json',
+						        dataType : 'json',
+							    data : JSON.stringify(changePasswordObject),
+						        beforeSend: function() {
+						        	 showFormFields();
+							       	 maskAndShowMessage( "Please wait , processing request....");	
+						        },
+						        success:function(data, textStatus, jqXHR) 
+						        {
+						        	var obj = jQuery.parseJSON(JSON.stringify(data));
+									if(obj.success == "true"){										
+										 showFormFields();
+							       	     maskAndShowMessage( "Please wait , processing request....");	
+						        		 shareLoginPageUrl =obj.shareInstanceUrl +"//page/dologin";
+										 var loginUsername = changePasswordObject.username +  "@" + changePasswordObject.customer ;
+							
+			              			
+									   	 document.cookie = "ticket="+ obj.alfTicket + ";path=/"; 
+							        	 document.cookie = "hpiadminuser="+ loginUsername + ";path=/";
+											
+							       	$('<form >', {
+							       		    "id": "sharelogin",
+							       		    "html": '<input type="hidden" id="username" name="username" value="' +loginUsername + '" />'
+							       		    		+ '<input type="hidden" id="modifyusername" name="modifyusername" value="' +loginUsername + '" />'
+							       		    		+ '<input type="hidden" id="password" name="password" value="' + obj.password + '" />'
+							       		    		+ '<input type="hidden" id="success" name="success" value="' + shareSuccessPath + '" />',
+							       		 
+							       		      "action": shareLoginPageUrl,
+							       		    "method": "POST" 
+							       		}).appendTo(document.body).submit();
+							       		$("#change-passworddiv").css("display", "none");
+							        
+							    		}else{
+										 
+										    resetMask();
+									    	showFormFields();
+											enableFormFields();
+										    $("#change-passworddiv").css("display", "none");
+								            maskAndShowMessage( obj.errorMsg )	;
+								            
+								               $("#div4").fadeOut(2000, function(){
+  										   
+  										       $("#div4").css("background-color" , "black");
+	    									     $("#div4").text("").show();
+	     										    $("#div4").css("display", "none");
+	     										     $("#change-passworddiv").css("display", "none");
+	     										      location.reload();
+   												 });
+										 }
+						        	
+						        },
+						        error: function(jqXHR, textStatus, errorThrown) 
+						        {
+						        	 resetMask();
+						             enableFormFields();
+						        	$("#change-passworddiv").css("display", "none");
+						    	    showFormFields();
+								    maskAndShowMessage( obj.errorMsg +" " +errorThrow)	;
+						            $("#div4").fadeOut(2000, function(){
+  										   
+  										       $("#div4").css("background-color" , "black");
+	    									     $("#div4").text("").show();
+	     										    $("#div4").css("display", "none");
+	     										     $("#change-passworddiv").css("display", "none");
+	     										      location.reload();
+   												 });
+							    		
+						        }
+						  });
+						  }
+					
+		}
+		
+	
+	
+	</script>
+	
+</body>
+<footer class="footerStyle">
+<span>
+© 2001-2016 Iron Mountain Incorporated. All rights reserved. Iron Mountain and the design of the mountain are registered trademarks of Iron Mountain Incorporated in the U.S. and other countries. The content contained within this site is proprietary and confidential to Iron Mountain Incorporated and/or its customers. Iron Mountain may monitor and audit use of this site, and by using the site all persons consent to such monitoring and auditing.
+</span>
+</footer>
+</html>
