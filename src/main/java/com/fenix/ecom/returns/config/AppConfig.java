@@ -27,6 +27,9 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 
 /**
@@ -47,7 +50,6 @@ public class AppConfig {
 
     @Value("${apiservices.init-db:false}")
     private String initDatabase;
-    
     
     @Bean
     public PlatformTransactionManager transactionManager() {
@@ -115,5 +117,5 @@ public class AppConfig {
     public RestTemplate getRestTemplate() {
     	return new RestTemplate();
     }
- 
+    
 }
